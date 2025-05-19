@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';"
+		/>
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="./view/styles/style.css"
+		/>
+	</head>
+	<body>
+		<div id="window-controls">
+			<div
+				id="min-btn"
+				class="window-controls-btn"
+			>
+				−
+			</div>
+			<div
+				id="max-btn"
+				class="window-controls-btn"
+			>
+				□
+			</div>
+			<div
+				id="close-btn"
+				class="window-controls-btn"
+			>
+				×
+			</div>
+		</div>
+		<nav>
+			<div>
+				<a href="#/home">Home</a>
+			</div>
+			<div>
+				<a href="#/despesas">Despesas</a>
+				<a href="#/funcionarios">Funcionários</a>
+				<a href="#/analises">Análises</a>
+			</div>
+		</nav>
+		<main id="app"></main>
+
+		<script src="./router.js"></script>
+		<script src="./renderer.js"></script>
+	</body>
+</html>

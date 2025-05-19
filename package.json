@@ -1,0 +1,32 @@
+{
+	"name": "projetodespesas",
+	"version": "1.0.0",
+	"description": "��#\u0000 \u0000p\u0000r\u0000o\u0000j\u0000e\u0000t\u0000o\u0000D\u0000e\u0000s\u0000p\u0000e\u0000s\u0000a\u0000s\u0000\r\u0000 \u0000",
+	"main": "main.js",
+	"build": {
+		"appId": "com.projetosdespesas.id",
+		"productName": "ProjetoDespesas",
+		"directories": {
+			"output": "dist"
+		},
+		"files": [
+			"**/*",
+			"src/**/*"
+		],
+		"win": {
+			"target": "nsis"
+		}
+	},
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-builder",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"electron": "^36.2.1",
+		"electron-builder": "^26.0.12"
+	}
+}

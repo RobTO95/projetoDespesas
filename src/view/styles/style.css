@@ -1,0 +1,106 @@
+:root {
+	--p1-color: #275317;
+	--p2-color: #3b7d23;
+	--p3-color: #d9f2d0;
+	--p4-color: #f3f3f3;
+	--p5-color: #caeefb;
+	--g-color: linear-gradient(
+		45deg,
+		rgba(202, 238, 251, 1) 0%,
+		rgba(217, 242, 209, 1) 100%
+	);
+	--white-color: white;
+	--black-color: black;
+}
+
+/* Barra minimizar, maximizar e fechar pagina ------------------------------------------------ */
+#window-controls {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 5px;
+	background-color: var(--p1-color);
+	-webkit-app-region: drag;
+}
+
+#window-controls .window-controls-btn {
+	background: transparent;
+	border: none;
+	height: 25px;
+	width: 30px;
+	font-size: 16px;
+	text-align: center;
+	align-items: center;
+	-webkit-app-region: no-drag;
+	color: var(--p3-color);
+	cursor: pointer;
+}
+
+#window-controls .window-controls-btn:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	background: var(--g-color);
+	color: var(--p1-color);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	overflow-y: hidden;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0px 20px;
+}
+nav a {
+	text-decoration: none;
+	color: var(--p4-color);
+}
+
+button,
+nav a {
+	/* background-color: var(--p2-color); */
+	background: #cbfabd;
+	background: linear-gradient(
+		nulldeg,
+		rgba(203, 250, 189, 1) 0%,
+		rgba(222, 251, 213, 1) 50%,
+		rgba(238, 253, 234, 1) 100%
+	);
+	border: 1px solid var(--p1-color);
+	padding: 8px 16px;
+	color: var(--p1-color);
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+button:hover,
+nav a:hover {
+	color: var(--p4-color);
+	background-color: var(--p2-color);
+}
+
+button:active,
+nav a:active {
+	color: var(--p2-color);
+	background-color: var(--p1-color);
+}
+/* Estilo de páginas ---------------------------------------------------------------------------------- */
+#app > section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 0px 10px;
+	height: calc(100% - 2rem);
+}
