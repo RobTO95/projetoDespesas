@@ -48,8 +48,29 @@
 			</div>
 		</nav>
 		<main id="app"></main>
-
+		<div>
+			<table id="tabela">
+				<thead>
+					<tr>
+						<th>coluna1</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>dado1</td>
+					</tr>
+					<tr>
+						<td>dado2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<script src="./router.js"></script>
 		<script src="./renderer.js"></script>
+		<script>
+			// const tabela = new TabelaInterativa();
+			const tb = document.getElementById("tabela");
+			console.log(tb);
+		</script>
 	</body>
 </html>
